@@ -1,0 +1,140 @@
+.container {
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: black;
+    width: 750px;
+    height: 750px;
+    position: relative;
+}
+
+.container div {
+    position: absolute;
+}
+
+.container div:first-of-type {
+    background-color: lightblue;
+    width: 25%;
+    left: 0;
+    top: 0;
+    height: 10%;
+}
+.container div:nth-of-type(2) {
+    background-color: beige;
+    width: 35%;
+    height: 10%;
+    top: 0;
+    left: 27%;
+}
+.container div:nth-of-type(3) {
+    background-color: orange;
+    width: 30%;
+    height: 10%;
+    top: 0;
+    left: 64%;
+}
+.container div:nth-of-type(4    ) {
+    background-color: orange;
+    width: 12%;
+    height: 23%;
+    top: 12%;
+    left: 0;
+}
+.container div:nth-of-type(5) {
+    background-color: blue;
+    width: 12%;
+    height: 40%;
+    top: 37%;
+    left: 0;
+}
+.container div:nth-of-type(6) {
+    background-color: red;
+    width: 12%;
+    height: 21%;
+    bottom: 0;
+    left: 0;
+}
+.container div:nth-of-type(7) {
+    background-color: rgb(212, 120, 120);
+    width: 48%;
+    height: 48%;
+    top: 12%;
+    left: 14%;
+}
+.container div:nth-of-type(8) {
+    background-color: rgb(204, 204, 193);
+
+    width: 22%;
+    height: 12%;
+    top: 62%;
+    left: 40%;
+}
+.container div:nth-of-type(9) {
+    background-color: beige;
+    width: 22%;
+    height: 10%;
+    top: 76%;
+    left: 40%;
+}
+.container div:nth-of-type(10) {
+    background-color: beige;
+    width: 24%;
+    height: 12%;
+    bottom: 0;
+    left: 14%;
+}
+.container div:nth-of-type(11) {
+    background-color: beige;
+    width: 54%;
+    height: 4%;
+    bottom: 0;
+    left: 40%;
+}
+.container div:nth-of-type(12) {
+    background-color: darkblue;
+    width: 30%;
+    height: 18%;
+    bottom: 6%;
+    left: 64%;
+}
+.container div:nth-of-type(13) {
+    background-color: white;
+    width: 30%;
+    height: 12%;
+    bottom: 26%;
+    left: 64%;
+}
+.container div:nth-of-type(14) {
+    background-color: white;
+    width: 30%;
+    height: 26%;
+    top: 12%;
+    left: 64%;
+}
+.container div:nth-of-type(15) {
+    background-color: greenyellow;
+    width: 14%;
+    height: 20%;
+    top: 40%;
+    left: 64%;
+}
+.container div:nth-of-type(16) {
+    background-color: greenyellow;
+    width: 14%;
+    height: 20%;
+    top: 40%;
+    left: 80%;
+}
+.container div:nth-of-type(17) {
+    background-color: beige;
+    width: 4%;
+    height: 80%;
+    top: 0;
+    right: 0;
+}
+.container div:nth-of-type(18) {
+    background-color: red;
+    width: 4%;
+    height: 18%;
+    bottom: 0;
+    right: 0;
+}
