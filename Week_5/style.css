@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=DM+Serif+Display:ital@0;1&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    height: 65px;
+    border-bottom: 2px solid black;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+}
+
+header nav {
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    padding: 0 16px;
+    height: 100%;
+}
+
+ul {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    font-family: 'Archivo';
+    font-weight: 700;
+    font-size: 18px;
+    color: #333;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    font-family: "DM Serif Display";
+    font-size: 20px;
+    color: #333;
+}
+
+main {
+    width: min(1560px, 90%);
+    margin: 0 auto;
+    margin-top: 64px;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.main-header h1 {
+    font-size: 72px;
+    font-family: "DM Serif Display";
+}
+
+.main-header-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.main-header-steps h2 {
+    font-size: 26px;
+    font-family: "DM Serif Display";
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.main-header-steps p {
+    font-size: 22px;
+    font-family: 'Archivo';
+}
+
+.main-header-steps p:last-of-type {
+    font-weight: 600;
+}
+
+.main-header-filter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 12px;
+}
+
+.main-header-filter button {
+    padding: 12px 14px;
+    border: 2px solid black;
+    background-color: white;
+    font-size: 16px;
+    font-family: "Archivo";
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.main-header-filter button:first-of-type {
+    background-color: black;
+    color: white;
+}
+.main-header-filter button:nth-of-type(2):hover {
+    background-color: lightgreen;
+}
+.main-header-filter button:nth-of-type(3):hover {
+    background-color: yellow;
+}
+.main-header-filter button:nth-of-type(4):hover {
+    background-color: orange;
+}
+
+.main-header-filter input {
+    grid-column: 1 / 5;
+    outline: none;
+    border: 2px solid black;
+    font-family: "Archivo";
+    padding: 14px 15px;
+    font-size: 20px;
+}
+
+.main-header > p {
+    font-size: 18px;
+    font-family: 'Archivo';
+    font-weight: 600;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.main-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 48px;
+    width: 100%;
+    margin-top: 48px;
+    margin-bottom: 100px;
+}
+
+.project-card {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    transition: transform 0.2s ;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.level-tag {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    border: 2px solid black;
+    font-family: "Archivo";
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 10px;
+}
+
+.project-card-image {
+    background-image: url('https://www.frontendpractice.com/_next/image?url=%2Fcard%2FC1-Ableton.jpg&w=640&q=100');
+    max-height: 420px;
+    height: 420px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+.project-card-title {
+    padding: 10px 0;
+    padding-left: 16px;
+    font-size: 24px;
+    font-family: "DM Serif Display";
+    font-weight: 600;
+    text-decoration: underline;
+    background-color: #faebd7;
+    color: #333;
+    border-top: 2px solid black;
+}
+
+@media (max-width: 1200px) {
+    .main-body {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (max-width: 1024px) {
+    .main-body {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 764px) {
+    header {
+        height: 80px;
+    }
+    header nav ul {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    header nav ul li a {
+        font-size: 12px;
+    }
+    .main-body {
+        grid-template-columns: 1fr;
+    }
+}
+
+footer {
+    height: 160px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    max-width: 400px;
+    align-items: center;
+}
+
+.footer-container h2 {
+    font-family: "Archivo";
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.footer-container ul {
+    gap: 16px;
+}
+
+.footer-container ul li a {
+    font-size: 16px;
+    color: white;
+}
