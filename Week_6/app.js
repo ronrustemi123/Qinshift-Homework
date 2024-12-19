@@ -1,62 +1,20 @@
-// Homework 1
+function findNum(type, array) {
+    let tempArr = []
+    if (type === 'odd') {
+        for (let i = 0; i <= array.length - 1; i++) {
+            if (array[i] % 2 !== 0) {
+                tempArr.push(array[i])
+            }
+        }
+    } else {
+        for (let i = 0; i <= array.length - 1; i++) {
+            if (array[i] % 2 === 0) {
+                tempArr.push(array[i])
+            }
+        }
+    }
 
-let phoneQuantity = 30
-let phonePrice = 119.95
-let taxRate = 0.05
-
-let totalPriceBeforeTax = phoneQuantity * phonePrice
-
-let totalPriceAfterTax = totalPriceBeforeTax * taxRate
-
-let totalAmount = totalPriceBeforeTax + totalPriceAfterTax
-
-console.log('Total Price: $' + totalAmount)
-
-// Homework 2
-
-let userInput = parseInt(prompt("Enter Year"))
-
-let zodiacCalculation = (userInput - 4) % 12
-
-
-console.log(`Your Year: ${userInput}`)
-
-switch (zodiacCalculation) {
-    case 0:
-        console.log('Rat')
-        break
-    case 3:
-        console.log('Rabbit')
-        break
-    case 6:
-        console.log('Horse')
-        break
-    case 9:
-        console.log('Rooster')
-        break
-    case 1:
-        console.log('Ox')
-        break
-    case 4:
-        console.log('Dragon')
-        break
-    case 7:
-        console.log('Goat')
-        break
-    case 10:
-        console.log('Dog')
-        break
-    case 2:
-        console.log('Tiger')
-        break
-    case 5:
-        console.log('Snake')
-        break
-    case 8:
-        console.log('Monkey')
-        break
-    case 11:
-        console.log('Pig')
-    default:
-        console.log('Invalid Input!')
+    console.log(tempArr)
 }
+
+findNum('even', [1, 3, 6, 8, 54, 3])
